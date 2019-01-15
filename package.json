@@ -1,0 +1,44 @@
+{
+  "name": "bs-meiosis-tracer",
+  "version": "0.1.0",
+  "description": "Bucklescript bindings for meiosis-tracer to trace stream state changes from Chrome browser extension",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/kristianmandrup/bs-meiosis-tracer.git"
+  },
+  "homepage": "https://gitlab.com/kristianmandrup/bs-meiosis-tracer",
+  "bugs": {
+    "url": "https://gitlab.com/kristianmandrup/bs-meiosis-tracer/issues"
+  },
+  "keywords": [
+    "BuckleScript",
+    "ReasonML",
+    "meiosis",
+    "stream",
+    "state",
+    "tracer"
+  ],
+  "files": [
+    "src/MeiosisTracer.re",
+    "bsconfig.json"
+  ],
+  "author": "Kristian Mandrup <kmandrup@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.6",
+    "bs-flyd": "kristianmandrup/bs-flyd",
+    "bs-platform": "^4.0.18",
+    "jest": "^23.6.0"
+  },
+  "peerDependencies": {
+    "meiosis-tracer": "^2.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
