@@ -1,2 +1,3 @@
-[@bs.module "meiosis-tracer"]
-external trace: (~selector: string, ~streams: array('a), unit) => unit = "";
+[@bs.module "meiosis-tracer/src/meiosis-tracer"]
+external meiosisTracer: (~selector: string, ~streams: array('a), unit) => unit =
+  "";

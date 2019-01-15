@@ -6,11 +6,11 @@ open ExpectJs;
 describe("MeiosisTracer", () =>
   test("#trace", () =>
     expect(() => {
-      let stream = stream();
-      let streams = [|stream|];
+      let strm = stream();
+      let streams = [|strm|];
       trace(~selector="#app", ~streams, ());
     })
     |> not
     |> toThrow
-  );
+  )
 );
